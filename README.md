@@ -12,6 +12,10 @@ Scripts to train Seq2Seq and Transformer models on the Amazon Topical-Chat Corpu
 
 The pre-processed data can be found in `data.zip`. If you would like to use a different pre-processing strategy, please download the original data from [here](https://github.com/alexa/alexa-prize-topical-chat-dataset/).
 
+# Pre-trained models
+
+The pre-trained models can be found at: https://drive.google.com/file/d/1fPB45RDs_BcJ8KZeYQiauK3W1RsdY2hM/view?usp=sharing
+
 # Contact
 
 If you experience any issues with this code, please contact me at mehrishikib@gmail.com

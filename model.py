@@ -287,7 +287,8 @@ class Transformer(nn.Module):
 
     # Form inputs
     if self.use_knowledge:
-      inputs = [row[0][-wh:] + row[2][:wk] + ['_eos'] + ['_eos'] for row in rows]
+      inputs = [row[0][-wh:] + row[2][:wk] + ['_eos'] for row in rows]
+      import pdb; pdb.set_trace()
     else:
       inputs = [row[0][-wh:] for row in rows]
 

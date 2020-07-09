@@ -297,7 +297,7 @@ class Transformer(nn.Module):
 
     # Form inputs
     if self.use_knowledge:
-      inputs = [row[0][-wh:] + row[2][:wk] + ['_eos'] + _sample(row[1]) + ['_eos'] for row in rows]
+      inputs = [row[0][-wh:] + row[2][:wk] + ['_eos'] + ['_eos'] for row in rows]
     else:
       inputs = [row[0][-wh:] for row in rows]
 

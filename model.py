@@ -282,16 +282,6 @@ class Transformer(nn.Module):
       max_len = max(lengths)
       return [e+[pad]*(max_len-len(e)) for e in arr], lengths
 
-    def _sample(arr):
-      arr = arr[1:-1]
-      #rate = random.random()
-      rate = 0.5
-      new = random.sample(range(len(arr)), int(rate * min(1000, len(arr))))
-      new = [arr[i] for i in sorted(new)]
-      # TODO: add shuffle
-      #random.shuffle(new)
-      return new
-
     # Split all rows
     rows = [[e.split() for e in row] for row in rows]
 
